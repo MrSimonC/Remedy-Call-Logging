@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>397</width>
+    <height>249</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>397</width>
+    <height>249</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Remedy Logging System</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="filepath">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>291</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openMds">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>10</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&amp;Open MDS</string>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+O</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sdplus">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>120</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="urgency">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>120</y>
+      <width>31</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>120</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Urgency:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SDPlus Number:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="endUserName">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>150</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>End User name:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Affected Users:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="affectedUsers">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>180</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="logIssue">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>180</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Log Issue</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="summary">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>291</width>
+      <height>71</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>397</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionReset_Form"/>
+    <addaction name="separator"/>
+    <addaction name="actionSettings"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuSDPlus">
+    <property name="title">
+     <string>&amp;SDPlus</string>
+    </property>
+    <addaction name="actionCreate_SDPlus_Record"/>
+    <addaction name="separator"/>
+    <addaction name="actionAttach_MDS_to_SDPlus_Record"/>
+    <addaction name="actionUpdate_Group"/>
+    <addaction name="actionUpdate_Requester"/>
+    <addaction name="actionUpdate_Status"/>
+    <addaction name="actionUpdate_Subject"/>
+    <addaction name="actionUpdate_Urgency"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuSDPlus"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSettings">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>S&amp;ettings</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionReset_Form">
+   <property name="text">
+    <string>&amp;Reset Form</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionUpdate_SDPlus_Number_in_MDS">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Update SDPlus Number in MDS</string>
+   </property>
+  </action>
+  <action name="actionRepull_all_MDS_details">
+   <property name="text">
+    <string>Repull all MDS details</string>
+   </property>
+  </action>
+  <action name="actionCreate_SDPlus_Record">
+   <property name="text">
+    <string>&amp;Create SDPlus Record</string>
+   </property>
+  </action>
+  <action name="actionAttach_MDS_to_SDPlus_Record">
+   <property name="text">
+    <string>&amp;Attach MDS</string>
+   </property>
+  </action>
+  <action name="actionUpdate_Group">
+   <property name="text">
+    <string>Update &amp;Group to 'Back Office Third Party/CSC'</string>
+   </property>
+  </action>
+  <action name="actionUpdate_Subject">
+   <property name="text">
+    <string>Update Su&amp;bject</string>
+   </property>
+  </action>
+  <action name="actionUpdate_Record_Description">
+   <property name="text">
+    <string>Update Description</string>
+   </property>
+  </action>
+  <action name="actionUpdate_Requester">
+   <property name="text">
+    <string>Update &amp;Requester</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="actionUpdate_Status">
+   <property name="text">
+    <string>Update Status to 'Hold - Awaiting Third Party'</string>
+   </property>
+  </action>
+  <action name="actionUpdate_Urgency">
+   <property name="text">
+    <string>Update &amp;Urgency</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

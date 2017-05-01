@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>244</width>
-    <height>457</height>
+    <width>310</width>
+    <height>490</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,8 +18,8 @@
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>30</y>
-      <width>113</width>
+      <y>80</y>
+      <width>181</width>
       <height>20</height>
      </rect>
     </property>
@@ -28,7 +28,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>30</y>
+      <y>80</y>
       <width>101</width>
       <height>16</height>
      </rect>
@@ -41,8 +41,8 @@
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>60</y>
-      <width>113</width>
+      <y>110</y>
+      <width>181</width>
       <height>20</height>
      </rect>
     </property>
@@ -54,7 +54,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>60</y>
+      <y>110</y>
       <width>101</width>
       <height>16</height>
      </rect>
@@ -66,8 +66,8 @@
    <widget class="QPushButton" name="save">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>380</y>
+      <x>120</x>
+      <y>430</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -83,8 +83,8 @@
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>320</y>
-      <width>113</width>
+      <y>370</y>
+      <width>181</width>
       <height>20</height>
      </rect>
     </property>
@@ -96,7 +96,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>320</y>
+      <y>370</y>
       <width>101</width>
       <height>16</height>
      </rect>
@@ -109,8 +109,8 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>270</y>
-      <width>231</width>
+      <y>320</y>
+      <width>291</width>
       <height>20</height>
      </rect>
     </property>
@@ -122,7 +122,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>90</y>
+      <y>140</y>
       <width>101</width>
       <height>16</height>
      </rect>
@@ -135,8 +135,8 @@
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>90</y>
-      <width>113</width>
+      <y>140</y>
+      <width>181</width>
       <height>20</height>
      </rect>
     </property>
@@ -148,7 +148,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>350</y>
+      <y>400</y>
       <width>111</width>
       <height>16</height>
      </rect>
@@ -161,8 +161,8 @@
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>350</y>
-      <width>113</width>
+      <y>400</y>
+      <width>181</width>
       <height>20</height>
      </rect>
     </property>
@@ -174,8 +174,8 @@
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>190</y>
-      <width>113</width>
+      <y>240</y>
+      <width>181</width>
       <height>20</height>
      </rect>
     </property>
@@ -187,7 +187,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>160</y>
+      <y>210</y>
       <width>101</width>
       <height>16</height>
      </rect>
@@ -200,8 +200,8 @@
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>160</y>
-      <width>113</width>
+      <y>210</y>
+      <width>181</width>
       <height>20</height>
      </rect>
     </property>
@@ -213,7 +213,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>190</y>
+      <y>240</y>
       <width>111</width>
       <height>16</height>
      </rect>
@@ -226,21 +226,21 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>250</y>
+      <y>300</y>
       <width>111</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>Org (Down No.):</string>
+     <string>Org:</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="remedy_new_call_sub_service">
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>220</y>
-      <width>113</width>
+      <y>270</y>
+      <width>181</width>
       <height>20</height>
      </rect>
     </property>
@@ -252,7 +252,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>220</y>
+      <y>270</y>
       <width>101</width>
       <height>16</height>
      </rect>
@@ -261,12 +261,12 @@
      <string>Sub Service:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="remedy_new_call_org_down">
+   <widget class="QLineEdit" name="remedy_new_call_org">
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>250</y>
-      <width>113</width>
+      <y>300</y>
+      <width>181</width>
       <height>20</height>
      </rect>
     </property>
@@ -278,7 +278,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>130</y>
+      <y>180</y>
       <width>131</width>
       <height>20</height>
      </rect>
@@ -297,7 +297,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>0</y>
+      <y>50</y>
       <width>131</width>
       <height>20</height>
      </rect>
@@ -316,7 +316,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>290</y>
+      <y>340</y>
       <width>131</width>
       <height>20</height>
      </rect>
@@ -331,14 +331,59 @@
      <string>SDPlus API</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>AD (Windows) Login</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="ad_username">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>20</y>
+      <width>181</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>AD Username:</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>244</width>
-     <height>21</height>
+     <width>310</width>
+     <height>18</height>
     </rect>
    </property>
   </widget>
@@ -351,7 +396,7 @@
   <tabstop>remedy_new_call_details</tabstop>
   <tabstop>remedy_new_call_service</tabstop>
   <tabstop>remedy_new_call_sub_service</tabstop>
-  <tabstop>remedy_new_call_org_down</tabstop>
+  <tabstop>remedy_new_call_org</tabstop>
   <tabstop>sdplus_tech_key</tabstop>
   <tabstop>sdplus_base_url</tabstop>
   <tabstop>save</tabstop>

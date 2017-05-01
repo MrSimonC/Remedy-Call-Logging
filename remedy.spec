@@ -1,12 +1,13 @@
 # -*- mode: python -*-
 
 block_cipher = None
-data_files = Tree(r'C:\Python35\Lib\site-packages\requests', prefix='requests')
-collect_files = [('IEDriverServer.exe', r'C:\Users\nbf1707\Desktop\IEDriverServer.exe', 'DATA')]
-collect_files += [('settings.cfg', 'settings.cfg', 'DATA')]
+binary_files = Tree(r'C:\Python35\Lib\site-packages\requests', prefix='requests')
+binary_files += [('remedy_ie.py', 'remedy_ie.py', 'BINARY')]  # have to include as starts with same name as remedy.py
+data_files = [('IEDriverServer.exe', 'IEDriverServer.exe', 'DATA')]
+data_files += [('settings.cfg', 'settings.cfg', 'DATA')]
 
 a = Analysis(['remedy.py'],
-             pathex=['C:\\simon files\\compilation zone\\Remedy Call Logging'],
+             pathex=['C:\\simon_files_compilation_zone\\Remedy Call Logging'],
              binaries=None,
              datas=None,
              hiddenimports=[],
@@ -20,7 +21,7 @@ pyz = PYZ(a.pure, a.zipped_data,
              cipher=block_cipher)
 exe = EXE(pyz,
           a.scripts,
-          data_files,
+          binary_files,
           a.binaries,
           a.zipfiles,
           a.datas,
@@ -28,10 +29,10 @@ exe = EXE(pyz,
           debug=False,
           strip=False,
           upx=True,
-          icon='remedy.ico',
-          console=True )
+          icon='remedy_icon.ico',
+          console=False )
 coll = COLLECT(exe,
-			collect_files,
+			data_files,
             upx=True,
 			name='remedy')
 			

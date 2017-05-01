@@ -170,6 +170,45 @@
      </rect>
     </property>
    </widget>
+   <widget class="QPushButton" name="refresh">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>60</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&amp;Refresh</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pullSubject">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>90</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pull Subject</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>40</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -177,7 +216,7 @@
      <x>0</x>
      <y>0</y>
      <width>397</width>
-     <height>21</height>
+     <height>18</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -193,14 +232,26 @@
     <property name="title">
      <string>&amp;SDPlus</string>
     </property>
-    <addaction name="actionCreate_SDPlus_Record"/>
+    <widget class="QMenu" name="menuCreation_Menu">
+     <property name="title">
+      <string>&amp;Creation Menu</string>
+     </property>
+     <addaction name="actionCreate_SDPlus_Record"/>
+    </widget>
+    <addaction name="actionUpdate_Group_Status_add_Note_Assign_myself"/>
+    <addaction name="actionUpdate_Group_Status_add_Note"/>
+    <addaction name="actionUpdate_Group_and_Status"/>
     <addaction name="separator"/>
     <addaction name="actionAttach_MDS_to_SDPlus_Record"/>
+    <addaction name="actionAdd_Note"/>
+    <addaction name="actionAssign_Myself"/>
     <addaction name="actionUpdate_Group"/>
     <addaction name="actionUpdate_Requester"/>
     <addaction name="actionUpdate_Status"/>
     <addaction name="actionUpdate_Subject"/>
     <addaction name="actionUpdate_Urgency"/>
+    <addaction name="separator"/>
+    <addaction name="menuCreation_Menu"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
@@ -240,24 +291,6 @@
     <string>Ctrl+Q</string>
    </property>
   </action>
-  <action name="actionUpdate_SDPlus_Number_in_MDS">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="text">
-    <string>Update SDPlus Number in MDS</string>
-   </property>
-  </action>
-  <action name="actionRepull_all_MDS_details">
-   <property name="text">
-    <string>Repull all MDS details</string>
-   </property>
-  </action>
-  <action name="actionCreate_SDPlus_Record">
-   <property name="text">
-    <string>&amp;Create SDPlus Record</string>
-   </property>
-  </action>
   <action name="actionAttach_MDS_to_SDPlus_Record">
    <property name="text">
     <string>&amp;Attach MDS</string>
@@ -271,11 +304,6 @@
   <action name="actionUpdate_Subject">
    <property name="text">
     <string>Update Su&amp;bject</string>
-   </property>
-  </action>
-  <action name="actionUpdate_Record_Description">
-   <property name="text">
-    <string>Update Description</string>
    </property>
   </action>
   <action name="actionUpdate_Requester">
@@ -293,12 +321,42 @@
   </action>
   <action name="actionUpdate_Status">
    <property name="text">
-    <string>Update Status to 'Hold - Awaiting Third Party'</string>
+    <string>Update Status to '&amp;Hold - Awaiting Third Party'</string>
    </property>
   </action>
   <action name="actionUpdate_Urgency">
    <property name="text">
-    <string>Update &amp;Urgency</string>
+    <string>Update U&amp;rgency</string>
+   </property>
+  </action>
+  <action name="actionUpdate_Group_and_Status">
+   <property name="text">
+    <string>Update Group and &amp;Status</string>
+   </property>
+  </action>
+  <action name="actionCreate_SDPlus_Record">
+   <property name="text">
+    <string>Create SDPlus &amp;Record</string>
+   </property>
+  </action>
+  <action name="actionUpdate_Group_Status_add_Note">
+   <property name="text">
+    <string>Update Group, Status, add &amp;Note</string>
+   </property>
+  </action>
+  <action name="actionUpdate_Group_Status_add_Note_Assign_myself">
+   <property name="text">
+    <string>&amp;Update Group, Status, add Note, Assign myself</string>
+   </property>
+  </action>
+  <action name="actionAssign_Myself">
+   <property name="text">
+    <string>Assign Myself</string>
+   </property>
+  </action>
+  <action name="actionAdd_Note">
+   <property name="text">
+    <string>Add Note (&quot;Logged to CSC&quot;)</string>
    </property>
   </action>
  </widget>

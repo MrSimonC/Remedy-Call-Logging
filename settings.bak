@@ -1,0 +1,15 @@
+[REMEDY LOGIN]
+remedy_login = Simon.Crouch
+remedy_url = https://rem-web.nme.ncrs.nhs.uk/arsys/shared/login.jsp
+remedy_password = REMOVED
+
+[REMEDY NEW CALL]
+details = See MDS
+service = l
+sub_service = l
+org_down = 1
+
+[SDPLUS API]
+sdplus_api_url = http://sdplus/sdpapi/
+sdplus_api_technician_key = REMOVED
+

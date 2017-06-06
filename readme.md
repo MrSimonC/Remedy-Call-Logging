@@ -15,12 +15,13 @@ Setup your IE settings first: Tools, Options, Security: (This allows the Seleniu
 
 ## Run
 Make a folder in "C:\Program Files\Remedy Logging System" (or another location of you choice) and put all the following files in there:
-* [settings.cfg](dist/settings.cfg)
-* [IEDriverServer.exe](dist/IEDriverServer.exe)
-* [Remedy.exe](dist/Remedy.exe)
+* [settings.cfg](dist/settings.cfg?raw=true)
+* [IEDriverServer.exe](dist/IEDriverServer.exe?raw=true)
+* [Remedy.exe](dist/Remedy.exe?raw=true)
 
 and run `Remedy.exe` to start.
 
+## Run code via Python
 To run code via python:
 ```python
 python remedy.py
@@ -36,7 +37,7 @@ Main Screen:
 
 ![main screen](readme_images/main_screen.png)
 
-Configuration screen:
+Settings screen:
 
 ![config screen](readme_images/config_screen.png)
 
